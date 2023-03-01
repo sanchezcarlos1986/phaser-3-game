@@ -16,9 +16,7 @@ export class IntroStory extends Scene {
 
   preload() {
     this.load.addFile(new WebFontFile(this.load, "Press Start 2P"));
-    this.load.audio("introductionMusic", [
-      "assets/audio/megaman2_soundtrack/1 - Introduction.mp3",
-    ]);
+    this.load.audio("introductionMusic", ["assets/audio/01 Opening.mp3"]);
     this.load.image("backgroundCity", "assets/image/megaman-city-games.jpg");
   }
 
@@ -79,7 +77,7 @@ export class IntroStory extends Scene {
         }
       )
       .setOrigin(0.5)
-      .setAlpha(1);
+      .setAlpha(0);
 
     // Timeline
     this.tweens.timeline({
