@@ -18,6 +18,15 @@ export class Level extends Scene {
   }
 
   create(): void {
+    this.add
+      .text(400, 400, "TEXTO DE MEGA MAN", {
+        color: "white",
+        align: "center",
+        fontSize: "20px",
+        fontFamily: '"Press Start 2P"',
+      })
+      .setOrigin(0.5);
+
     this.cubix = this.add.image(100, 100, "cubix").setOrigin(0.5);
     const keyCodes = Phaser.Input.Keyboard.KeyCodes;
 

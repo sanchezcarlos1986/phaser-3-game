@@ -1,3 +1,4 @@
+import { Preload } from "./scenes/Preload";
 import { IntroCapcom } from "./scenes/IntroCapcom";
 import { IntroStory } from "./scenes/IntroStory";
 import { Level } from "./scenes/Level";
@@ -5,7 +6,7 @@ import { Level } from "./scenes/Level";
 const config: Phaser.Types.Core.GameConfig = {
   title: "Demo Game",
   pixelArt: true,
-  scene: [Level],
+  scene: [Preload, Level],
   backgroundColor: "#000",
   scale: {
     mode: Phaser.Scale.FIT,
