@@ -12,7 +12,7 @@ const config: Phaser.Types.Core.GameConfig = {
     default: "arcade",
     arcade: {
       gravity: {
-        y: 800,
+        y: 2000,
       },
       debug: true,
       debugShowBody: true,
@@ -23,8 +23,8 @@ const config: Phaser.Types.Core.GameConfig = {
     mode: Phaser.Scale.FIT,
     parent: "game-container",
     autoCenter: Phaser.Scale.CENTER_BOTH,
-    width: 800,
-    height: 600,
+    width: 640,
+    height: 360,
     max: {
       width: 800,
       height: 600,
